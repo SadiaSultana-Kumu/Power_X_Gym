@@ -2,8 +2,11 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
-import Home from './components/Home/Home';
-import { BrowserRouter as Router, Switch , Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch , Route } from "react-router-dom";
+import Home from './components/Pages/Home/Home';
+import Pricing from './components/Pages/Pricing';
+import Purchase from './components/Pages/Purchase';
+import Classes from './components/Pages/Classes/Classes';
 
 
 function App() {
@@ -15,8 +18,14 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
-          <Route exact path="/">
-            <Home></Home>
+          <Route path="/classes">
+            <Classes></Classes>
+          </Route>
+          <Route  path="/pricing">
+            <Pricing/>
+          </Route>
+          <Route path="/purchase/:id">
+            <Purchase/>
           </Route>
         </Switch>
       </Router>

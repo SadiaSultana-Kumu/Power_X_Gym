@@ -19,7 +19,7 @@ const NavBar = () => {
     return (
         <nav className={isSticky ? "fade in show navbar navbar-expand-sm fixed-top navbar-dark bg-dark " : "fade out show navbar navbar-expand-sm fixed-top navbar-dark " }>
             <div className="container">
-                <Link className="navbar-brand" href="/">POWER <strong className="text-yellow">X</strong></Link>
+                <Link className="navbar-brand" to="/">POWER <strong className="text-yellow">X</strong></Link>
                 <button className="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -27,25 +27,19 @@ const NavBar = () => {
                 <div className="collapse navbar-collapse" id="collapsibleNavId">
                     <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
                         <li className="nav-item active">
-                            <Link className="nav-link" href="/">Home <span className="sr-only">(current)</span></Link>
+                            <Link className="nav-link" to="/home">Home <span className="sr-only">(current)</span></Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" href="/">Service</Link>
-                        </li> 
-                        <li className="nav-item">
-                            <Link className="nav-link" href="/">Our Classes</Link>
+                            <Link className="nav-link" to="/classes">Our Classes</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" href="/">About Us</Link>
+                            <Link className="nav-link" to="/">About Us</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" href="/">Blog</Link>
+                            <Link className="nav-link" to="/pricing">Pricing</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" href="/">Pricing</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" href="/">Contact us</Link>
+                            <Link className="nav-link" to="/">Contact us</Link>
                         </li>                 
                     </ul> 
                 </div>

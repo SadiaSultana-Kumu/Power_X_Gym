@@ -1,0 +1,10 @@
+.breadcrumb{
+    height: 350px;
+    background-size: cover;
+    z-index: 0;
+}
+
+.breadcrumb::before{
+    left: 0;
+    z-index: -1;
+}

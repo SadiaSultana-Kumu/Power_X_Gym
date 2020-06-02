@@ -4,7 +4,7 @@
     margin-top: 100px;
     padding: 20px 10px;
     text-align: left;
-    width: 100%;
+    overflow: hidden;
 }
 
 .footer-block h4{

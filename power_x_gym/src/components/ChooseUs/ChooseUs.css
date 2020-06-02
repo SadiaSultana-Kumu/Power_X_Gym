@@ -1,49 +1,44 @@
-.catalogue{
-    width: 100%;
-    height: auto;
-}
-
-.text{
+.chooseus .text{
     color: #f9d94d;
     text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+.text-center{
+    font-family: 'Oswald', sans-serif;
 }
 
-.card{
+.chooseus .card{
     width: 32%;
     display: flex;
     justify-content: flex-end;;
     margin-left: 1.33%;
     margin-top: 20px;
-    background-repeat: no-repeat;
     position: relative;
     z-index: 0;
-    background-size: cover;
-    background-position: center center;
+    border: none;
+    box-shadow: 0px 10px 10px 0px lightgray;
     padding-bottom: 40px !important;
 }
-.div_one{
-    background-image: url('../../Images/hipcravo-5UbIqV58CW8-unsplash.jpg');
-}
-.div_two{
-    background-image: url('../../Images/daniel-apodaca-WdoQio6HPVA-unsplash.jpg');
-}
-.div_three{
-    background-image: url('../../Images/penguinuhh-8VI6WwEEEHw-unsplash.jpg');
+
+.chooseus .card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0px 8px 10px 0px lightgray;
+    border: 1px solid goldenrod;
 }
 
-.catalogue .card:before{
+.chooseus .card:before{
     content: "";
     display: block;
     width: 100%;
     height: 100%;
-    background: #1c234a59;
+    background: white;
     z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.catalogue .card img{
+.chooseus .card img{
     width: auto;
     height: 50px;
     margin: 40px auto;

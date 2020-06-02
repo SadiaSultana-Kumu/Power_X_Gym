@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Banner.css';
 import ModalVideo from 'react-modal-video';
+import 'react-modal-video/scss/modal-video.scss';
 
 const Banner = () => {
     const [isOpen, setIsOpen] = useState(false);
