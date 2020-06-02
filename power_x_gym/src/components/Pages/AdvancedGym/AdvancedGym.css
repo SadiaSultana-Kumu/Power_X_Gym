@@ -1,0 +1,21 @@
+.advancedGym{
+    width: 100%;
+    height: auto;
+}
+
+.schedule-label{
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    box-shadow: 5px 5px 10px lightgray;
+}
+.check{
+    justify-content: flex-end;
+    display: flex;
+}
+.check-btn{
+    background: goldenrod;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+}

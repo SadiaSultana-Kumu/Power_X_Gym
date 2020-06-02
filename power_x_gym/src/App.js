@@ -7,6 +7,7 @@ import Home from './components/Pages/Home/Home';
 import Pricing from './components/Pages/Pricing';
 import Purchase from './components/Pages/Purchase';
 import Classes from './components/Pages/Classes/Classes';
+import AdvancedGym from './components/Pages/AdvancedGym/AdvancedGym';
 
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route  path="/pricing">
             <Pricing/>
+            </Route>
+          <Route  path="/gym">
+            <AdvancedGym></AdvancedGym>
           </Route>
           <Route path="/purchase/:id">
             <Purchase/>

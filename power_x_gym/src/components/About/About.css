@@ -9,3 +9,9 @@ h2{
     width: 100%;
     height: auto;
 }
+
+.back-img{
+    background-image: url('../../Images/cross\ -\ Copy.png');
+    background-position: right -15px;
+    background-repeat: no-repeat;
+}

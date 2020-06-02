@@ -8,11 +8,14 @@ import john from '../../../Images/john-fornander-FIu48iuo_4g-unsplash.jpg';
 import sven from '../../../Images/sven-mieke-Lx_GDv7VA9M-unsplash.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import Breadcrumb from '../../Breadcrumb/Breadcrumb';
+import Footer from '../../Footer/Footer';
 
 
 const Classes = () => {
     return (
         <div className="classes">
+        <Breadcrumb title="Our classes"/>
             <div className="container">
                 <div className="row_1">
                     <div className="card-deck">
@@ -60,6 +63,7 @@ const Classes = () => {
                 </div>
                 
             </div>
+            <Footer></Footer>
         </div>
     );
 };
