@@ -67,7 +67,7 @@ const AdvancedGym = () => {
                     </div>
                 </div>
             </div>
-            <Footer></Footer>
+           
         </div>
     );
 };

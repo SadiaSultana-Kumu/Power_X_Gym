@@ -7,6 +7,7 @@ import StepIndecator from '../StepIndecator/StepIndecator';
 const Purchase = () => {
     const [step, setStep] = useState(1);
     const [capturedData, setCapturedData] = useState({});
+    const [orderId, setOrderId] = useState(null);
 
     const stepHandler = (data) => {
         setStep(step + 1);
@@ -14,7 +15,17 @@ const Purchase = () => {
         setCapturedData(newData);
     }
     console.log(capturedData);
-    
+    if(step === 3){
+        fetch("https://power-x.herokuapp.com/api/v1/insert-invoice" , {
+            method:"POST",
+            body: JSON.stringify(capturedData),
+            headers :{
+                "Content-Type" : "application/json"
+            } 
+        })
+        .then(res=> res.json())
+        .then(data => setOrderId(data._id))
+    }
     return (
         <>
             <Breadcrumb title={"Your Gym Membership"}/>
@@ -25,9 +36,15 @@ const Purchase = () => {
                 : step === 2 ?
                 <Payment stepHandler={stepHandler}/>
                 :
-                <h1>Thank you</h1>
+                <div className="container text-center py-5">
+                    <h1 className="text-success">
+                        Thank you for Registration
+                    </h1>
+                    <p className="lead">Your Order id  is :  {orderId}</p>
+                </div>
             }
             
+           
             
         </>
     );

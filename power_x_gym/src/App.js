@@ -9,6 +9,7 @@ import Purchase from './components/Pages/Purchase';
 import Classes from './components/Pages/Classes/Classes';
 import AdvancedGym from './components/Pages/AdvancedGym/AdvancedGym';
 import Payment from './components/Payment/Payment';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
             <Purchase/>
           </Route>
         </Switch>
+        <Footer/>
       </Router>
     </div>
     

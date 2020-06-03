@@ -63,7 +63,7 @@ const Classes = () => {
                 </div>
                 
             </div>
-            <Footer></Footer>
+            
         </div>
     );
 };
