@@ -19,7 +19,7 @@ const NavBar = () => {
     return (
         <nav className={isSticky ? "fade in show navbar navbar-expand-sm fixed-top navbar-dark bg-dark " : "fade out show navbar navbar-expand-sm fixed-top navbar-dark " }>
             <div className="container">
-                <Link className="navbar-brand" to="/">POWER <strong className="text-yellow">X</strong></Link>
+                <Link className="navbar-brand" to="/home">POWER <strong className="text-yellow">X</strong></Link>
                 <button className="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>

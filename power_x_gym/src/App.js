@@ -8,6 +8,7 @@ import Pricing from './components/Pages/Pricing';
 import Purchase from './components/Pages/Purchase';
 import Classes from './components/Pages/Classes/Classes';
 import AdvancedGym from './components/Pages/AdvancedGym/AdvancedGym';
+import Payment from './components/Payment/Payment';
 
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
       <Router>
         <NavBar></NavBar>
         <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
           <Route path="/home">
             <Home></Home>
           </Route>
@@ -26,7 +30,7 @@ function App() {
             <Pricing/>
             </Route>
           <Route  path="/gym">
-            <AdvancedGym></AdvancedGym>
+            <Payment></Payment>
           </Route>
           <Route path="/purchase/:id">
             <Purchase/>

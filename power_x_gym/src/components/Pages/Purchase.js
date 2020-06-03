@@ -23,7 +23,7 @@ const Purchase = () => {
                 step === 1 ? 
                 <PersonalDetails stepHandler={stepHandler}/>
                 : step === 2 ?
-                <Payment/>
+                <Payment stepHandler={stepHandler}/>
                 :
                 <h1>Thank you</h1>
             }

@@ -1,0 +1,9 @@
+.payment{
+    width: 100%;
+    height: auto;
+}
+
+.stripe{
+    height: 500px;
+    width: 100%;
+}
