@@ -18,10 +18,11 @@
     border: none;
     box-shadow: 0px 10px 10px 0px lightgray;
     padding-bottom: 40px !important;
+    transition: all .3s ease ;
 }
 
 .chooseus .card:hover{
-    transform: translateY(-20px);
+    transform: translateY(-10px);
     box-shadow: 0px 8px 10px 0px lightgray;
     border: 1px solid goldenrod;
 }

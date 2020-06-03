@@ -56,6 +56,7 @@ const Classes = () => {
                         <div className="card">
                             <img className="card-img-top" src={sven} alt=""/>
                             <div className="card-footer">
+    
                             <label className="label-text font-weight-bold">PSYCHO TRAINING <FontAwesomeIcon icon={faArrowRight}/></label>
                             </div>
                         </div>

@@ -8,7 +8,7 @@ const Pricing = () => {
         <>
             <Breadcrumb title="Pricing Plans" />
             <PricingPlans/>
-            <Footer/>
+        
         </>
     );
 };

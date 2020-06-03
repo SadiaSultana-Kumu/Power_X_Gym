@@ -8,20 +8,20 @@ const ChooseUs = () => {
         return (
             <div className="chooseus my-5">
             <div className="container">
-               <h1  className="text-center"><span className="text">WHY </span>YOU CHOOSE US</h1>
+               <h1  className="text-center pb-4"><span className="text">WHY </span>YOU CHOOSE US</h1>
               <div className="row text-center">
                     
-                        <div className="card div_one py-2">
+                        <div className="card div_one py-4">
                             <img  src={div_1_img} alt=""/>
                             <h3 className="text-dark font-weight-bold">FREE FITNESS TRAINING</h3>
                             <p className="text-dark mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, suscipit numquam amet consectetur .</p>
                         </div>
-                        <div className="card div_two">
+                        <div className="card div_two py-4">
                             <img  src={div_2_img} alt=""/>
                             <h3 className="text-dark font-weight-bold">TONS OF CARDIO & STRENGTH</h3>
                             <p className="text-dark mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, suscipit numquam amet consectetur .</p>
                         </div>
-                        <div className="card div_three">
+                        <div className="card div_three py-4">
                             <img  src={div_3_img} alt=""/>
                             <h3 className="text-dark font-weight-bold">NO COMMITMENT MEMBERSHIPS</h3>
                             <p className="text-dark mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, suscipit numquam amet consectetur .</p>
